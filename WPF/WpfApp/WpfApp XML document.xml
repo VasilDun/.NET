@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfApp</name>
+    </assembly>
+    <members>
+        <member name="T:WpfApp.SetTextColorDialog">
+            <summary>
+            Interaction logic for SetTextColorDialog.xaml
+            </summary>
+            <summary>
+            SetTextColorDialog
+            </summary>
+        </member>
+        <member name="F:WpfApp.SetTextColorDialog.contour">
+            <summary>
+            <see cref = "T:System.Windows.Media.Brush"/> for contour
+            </summary>
+        </member>
+        <member name="F:WpfApp.SetTextColorDialog.fill">
+            <summary>
+            <see cref = "T:System.Windows.Media.Brush"/> for fill
+            </summary>
+        </member>
+        <member name="M:WpfApp.SetTextColorDialog.#ctor">
+            <summary>
+            Initilizes a new instance of <see cref="T:WpfApp.SetTextColorDialog"/> class
+            </summary>
+        </member>
+        <member name="P:WpfApp.SetTextColorDialog.NameItem">
+            <summary>
+            Gets or sets item name
+            </summary>
+        </member>
+        <member name="P:WpfApp.SetTextColorDialog.Contour">
+            <summary>
+            Gets or sets <see cref = "T:System.Windows.Media.Brush"/> contour property
+            </summary>
+        </member>
+        <member name="P:WpfApp.SetTextColorDialog.Fill">
+            <summary>
+            Gets or sets <see cref = "T:System.Windows.Media.Brush"/> fill property
+            </summary>
+        </member>
+        <member name="M:WpfApp.SetTextColorDialog.BtnContour_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Set contour color
+            </summary>
+            <param name="sender">Reference to the object that raised the event</param>
+            <param name="e">Provides data for the RoutedEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.SetTextColorDialog.BtnFill_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Set fill color
+            </summary>
+            <param name="sender">Reference to the object that raised the event</param>
+            <param name="e">Provides data for the RoutedEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.SetTextColorDialog.BtnOk_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Press OK
+            </summary>
+            <param name="sender">Reference to the object that raised the event</param>
+            <param name="e">Provides data for the RoutedEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.SetTextColorDialog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfApp.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:WpfApp.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WpfApp.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:WpfApp.ChooseEllipseCommand">
+            <summary>
+            Custom command class to perform choosing an ellipse from drawing area.
+            Implements ICommand interface
+            </summary>
+        </member>
+        <member name="F:WpfApp.ChooseEllipseCommand.isExecutable">
+            <summary>
+            Determines whether the command can execute in its current state
+            </summary>
+        </member>
+        <member name="E:WpfApp.ChooseEllipseCommand.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should execute
+            </summary>
+        </member>
+        <member name="P:WpfApp.ChooseEllipseCommand.Canvas">
+            <summary>
+            Gets or sets <see cref = "T:WpfApp.EllipseCanvas"/> property which represents canvas drawing area
+            </summary>
+        </member>
+        <member name="P:WpfApp.ChooseEllipseCommand.Ellipse">
+            <summary>
+            Gets or sets <see cref = "T:WpfApp.EllipseInfo"/> property which represents an ellipse
+            </summary>
+        </member>
+        <member name="M:WpfApp.ChooseEllipseCommand.CanExecute(System.Object)">
+            <summary>
+            Shows whether the command can execute in its current state
+            </summary>
+            <param name="parameter">Data used by the command</param>
+            <returns>bool value whether the command can execute</returns>
+        </member>
+        <member name="M:WpfApp.ChooseEllipseCommand.Execute(System.Object)">
+            <summary>
+            Is called when the command is invoked.
+            </summary>
+            <param name="parameter">Data used by the command</param>
+        </member>
+        <member name="M:WpfApp.ChooseEllipseCommand.SetExecutable(System.Boolean)">
+            <summary>
+            Sets bool value whether the command can execute
+            </summary>
+            <param name="isExecutable">bool value whether the command can execute</param>
+        </member>
+        <member name="M:WpfApp.ChooseEllipseCommand.ToString">
+            <summary>
+            Name of ellipse
+            </summary>
+            <returns>string that represents the name of current object</returns>
+        </member>
+        <member name="T:WpfApp.CommandHandler">
+            <summary>
+            Custom command class. Implements <see cref = "T:System.Windows.Input.ICommand"/> interface
+            </summary>
+        </member>
+        <member name="F:WpfApp.CommandHandler.action">
+            <summary>
+            Action delegate to encapsulate executed method
+            </summary>
+        </member>
+        <member name="F:WpfApp.CommandHandler.canExecute">
+            <summary>
+            Determines whether the command can execute in its current state
+            </summary>
+        </member>
+        <member name="M:WpfApp.CommandHandler.#ctor(System.Action,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:WpfApp.CommandHandler"/> class.
+            Constructor with parameters 
+            </summary>
+            <param name="action_">Action delegate to encapsulate executed method</param>
+            <param name="canExecute_">bool value whether the command can execute</param>
+        </member>
+        <member name="E:WpfApp.CommandHandler.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should execute
+            </summary>
+        </member>
+        <member name="M:WpfApp.CommandHandler.CanExecute(System.Object)">
+            <summary>
+            Shows whether the command can execute in its current state
+            </summary>
+            <param name="parameter">Data used by the command</param>
+            <returns>bool value whether the command can execute</returns>
+        </member>
+        <member name="M:WpfApp.CommandHandler.Execute(System.Object)">
+            <summary>
+            Is called when the command is invoked
+            </summary>
+            <param name="parameter">Data used by the command</param>
+        </member>
+        <member name="T:WpfApp.EllipseCanvas">
+            <summary>
+            Represents drawing area for ellipses
+            </summary>
+        </member>
+        <member name="F:WpfApp.EllipseCanvas.canvas">
+            <summary>
+            Canvas drawing area
+            </summary>
+        </member>
+        <member name="F:WpfApp.EllipseCanvas.ellipses">
+            <summary>
+            <see cref = "T:System.Windows.Documents.List"/> of <see cref = "T:WpfApp.EllipseInfo"/>
+            </summary>
+        </member>
+        <member name="F:WpfApp.EllipseCanvas.currentEllipse">
+            <summary>
+            Current <see cref = "T:WpfApp.EllipseInfo"/>
+            </summary>
+        </member>
+        <member name="F:WpfApp.EllipseCanvas.a">
+            <summary>
+            Point to implement moving of ellipse
+            </summary>
+        </member>
+        <member name="F:WpfApp.EllipseCanvas.b">
+            <summary>
+            Point to implement moving of ellipse
+            </summary>
+        </member>
+        <member name="F:WpfApp.EllipseCanvas.ellipseTemp">
+            <summary>
+            Temprorary <see cref = "T:System.Windows.Shapes.Ellipse"/> to implement moving of ellipse
+            </summary>
+        </member>
+        <member name="F:WpfApp.EllipseCanvas.isDraw">
+            <summary>
+            Allow drawing
+            </summary>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref = "T:WpfApp.EllipseCanvas"/> class.
+            Constructor without parameters
+            </summary>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.#ctor(System.Windows.Controls.Canvas)">
+            <summary>
+            Initializes a new instance of the <see cref = "T:WpfApp.EllipseCanvas"/> class.
+            Constructor with parameters
+            </summary>
+            <param name="canvas">Canvas drawing area</param>
+        </member>
+        <member name="T:WpfApp.EllipseCanvas.ListChangedEvent">
+            <summary>
+            delegate for ListChangedEvent
+            </summary>
+            <param name="sender">Reference to the object that raised the event</param>
+            <param name="args">Provides data for the EllipseListChangedEventArgs event</param>
+        </member>
+        <member name="E:WpfApp.EllipseCanvas.OnEllipseAdded">
+            <summary>
+            Occurs when an item is added to the underlying list
+            </summary>
+        </member>
+        <member name="E:WpfApp.EllipseCanvas.OnEllipseRemoved">
+            <summary>
+            Occurs when an item is removed from the underlying list
+            </summary>
+        </member>
+        <member name="P:WpfApp.EllipseCanvas.Canvas">
+            <summary>
+            Gets or sets canvas property.
+            </summary>
+            <value>
+            A value tag is used to describe the property value.
+            </value>
+        </member>
+        <member name="P:WpfApp.EllipseCanvas.Ellipses">
+            <summary>
+            Gets <see cref = "T:System.Windows.Documents.List"/> of <see cref = "T:WpfApp.EllipseInfo"/>
+            </summary>
+        </member>
+        <member name="P:WpfApp.EllipseCanvas.CurrentEllipse">
+            <summary>
+            Gets or sets current ellipse property.
+            </summary>
+            <value>
+            A value tag is used to describe the property value.
+            </value>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.AddEllipse(WpfApp.EllipseInfo)">
+            <summary>
+            Adds <see cref = "T:WpfApp.EllipseInfo"/> to drawing area
+            </summary>
+            <param name="ellipse"><see cref = "T:WpfApp.EllipseInfo"/> to add</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.Clear">
+            <summary>
+            Clears list of <see cref = "T:WpfApp.EllipseInfo"/>
+            </summary>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.RemoveEllipse(WpfApp.EllipseInfo)">
+            <summary>
+            Removes ellipse from list
+            </summary>
+            <param name="ellipse"><see cref = "T:WpfApp.EllipseInfo"/> to remove</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.IsEmpty">
+            <summary>
+            Checks whether list is empty
+            </summary>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.MoveEllipse(WpfApp.EllipseInfo,System.Windows.Point)">
+            <summary>
+            Shift <see cref = "T:WpfApp.EllipseInfo"/> so it has top left <see cref = "T:System.Windows.Point"/> similar to given
+            </summary>
+            <param name="ellipse"><see cref = "T:WpfApp.EllipseInfo"/> to shift</param>
+            <param name="shift"><see cref = "T:System.Windows.Point"/> destination</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.Shape_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handle the MouseLeftButtonDown event
+            </summary>
+            <param name="sender">Reference to the object that raised the event.</param>
+            <param name="e">Provides data for the MouseButtonEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.Ellipse_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Handle the KeyDown event
+            </summary>
+            <param name="sender">Reference to the object that raised the event.</param>
+            <param name="e">Provides data for the KeyDown event</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.Shape_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handle the MouseLeftButtonUp event
+            </summary>
+            <param name="sender">Reference to the object that raised the event.</param>
+            <param name="e">Provides data for the MouseButtonEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.Shape_MouseMove(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Handle the MouseMove event
+            </summary>
+            <param name="sender">Reference to the object that raised the event.</param>
+            <param name="e">Provides data for the MouseEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.OnEndCreation(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Handle the OnEndCreation event
+            </summary>
+            <param name="e">Provides data for the MouseEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.CanvasDrawingArea_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handle the MouseLeftButtonDown event
+            </summary>
+            <param name="sender">Reference to the object that raised the event.</param>
+            <param name="e">Provides data for the MouseButtonEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.CanvasDrawingArea_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handle the MouseLeftButtonUp event
+            </summary>
+            <param name="sender">Reference to the object that raised the event.</param>
+            <param name="e">Provides data for the MouseButtonEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.EllipseCanvas.CanvasDrawingArea_MouseMove(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Handle the MouseMove event
+            </summary>
+            <param name="sender">Reference to the object that raised the event.</param>
+            <param name="e">Provides data for the MouseEventArgs event</param>
+        </member>
+        <member name="T:WpfApp.EllipseListChangedEventArgs">
+            <summary>
+            Class to handle ListChangedEventArgs event
+            </summary>
+        </member>
+        <member name="M:WpfApp.EllipseListChangedEventArgs.#ctor(WpfApp.EllipseInfo,WpfApp.EllipseCanvas)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WpfApp.EllipseListChangedEventArgs"/> class
+            </summary>
+            <param name="ellipse">Shape ellipse</param>
+            <param name="canvas">Canvas drawing area</param>
+        </member>
+        <member name="P:WpfApp.EllipseListChangedEventArgs.Ellipse">
+            <summary>
+            Gets or sets <see cref = "T:WpfApp.EllipseInfo"/>
+            </summary>
+        </member>
+        <member name="P:WpfApp.EllipseListChangedEventArgs.Canvas">
+            <summary>
+            Gets or sets <see cref = "T:WpfApp.EllipseCanvas"/>
+            </summary>
+        </member>
+        <member name="T:WpfApp.EllipseInfo">
+            <summary>
+            Represents Ellipse with top left point
+            </summary>
+        </member>
+        <member name="M:WpfApp.EllipseInfo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref = "T:WpfApp.EllipseInfo"/> class.
+            Constructor without parameters
+            </summary>
+        </member>
+        <member name="P:WpfApp.EllipseInfo.TopLeft">
+            <summary>
+            Gets or sets point property.
+            </summary>
+        </member>
+        <member name="P:WpfApp.EllipseInfo.Name">
+            <summary>
+            Gets or sets name property.
+            </summary>
+        </member>
+        <member name="P:WpfApp.EllipseInfo.Shape">
+            <summary>
+            Gets or sets ellipse property.
+            </summary>
+        </member>
+        <member name="P:WpfApp.EllipseInfo.Stroke">
+            <summary>
+            Gets or sets stroke property.
+            </summary>
+            <value>
+            A value tag is used to describe the property value.
+            </value>
+        </member>
+        <member name="P:WpfApp.EllipseInfo.Fill">
+            <summary>
+            Gets or sets fill property.
+            </summary>
+            <value>
+            A value tag is used to describe the property value
+            </value>
+        </member>
+        <member name="P:WpfApp.EllipseInfo.Width">
+            <summary>
+            Gets or sets width property.
+            </summary>
+            <value>
+            A value tag is used to describe the property value.
+            </value>
+        </member>
+        <member name="P:WpfApp.EllipseInfo.Height">
+            <summary>
+            Gets or sets height property.
+            </summary>
+            <value>
+            A value tag is used to describe the property value.
+            </value>
+        </member>
+        <member name="M:WpfApp.EllipseInfo.FromBrush(System.Windows.Media.Brush)">
+            <summary>
+            Gets color
+            </summary>
+            <param name="br">Brush to paint</param>
+            <returns>New color</returns>
+        </member>
+        <member name="T:WpfApp.FileOperations">
+            <summary>
+            Performs interaction with files
+            </summary>
+        </member>
+        <member name="M:WpfApp.FileOperations.Serialize(System.Collections.Generic.List{WpfApp.EllipseInfo},System.String)">
+            <summary>
+            Serializes list of <see cref="T:WpfApp.EllipseInfo"/> and saves to file
+            </summary>
+            <param name="ellipses">List of <see cref="T:WpfApp.EllipseInfo"/> to serialize</param>
+            <param name="path">Specifies a location in a file system</param>
+        </member>
+        <member name="M:WpfApp.FileOperations.Deserialize(System.String)">
+            <summary>
+            Deserializes list of <see cref="T:WpfApp.EllipseInfo"/>
+            </summary>
+            <param name="fileName">name of file in which information is stored</param>
+            <returns>List of <see cref="T:WpfApp.EllipseInfo"/></returns>
+        </member>
+        <member name="T:WpfApp.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:WpfApp.MainWindow.ellipseCanvas">
+            <summary>
+            Drawing area
+            </summary>
+        </member>
+        <member name="F:WpfApp.MainWindow.newFile">
+            <summary>
+            Command to make a new file
+            </summary>
+        </member>
+        <member name="F:WpfApp.MainWindow.openFile">
+            <summary>
+            Command to open file
+            </summary>
+        </member>
+        <member name="F:WpfApp.MainWindow.saveFile">
+            <summary>
+            Command to save file
+            </summary>
+        </member>
+        <member name="F:WpfApp.MainWindow.resetEllipse">
+            <summary>
+            Gets resetEllipse command
+            </summary>
+        </member>
+        <member name="F:WpfApp.MainWindow.canExecute">
+            <summary>
+            bool value whether the command can execute
+            </summary>
+        </member>
+        <member name="M:WpfApp.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref = "T:WpfApp.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="P:WpfApp.MainWindow.ResetEllipse">
+            <summary>
+            Gets ressetEllipse command
+            </summary>
+        </member>
+        <member name="P:WpfApp.MainWindow.NewFile">
+            <summary>
+            Gets NewFile Command
+            </summary>
+        </member>
+        <member name="P:WpfApp.MainWindow.OpenFile">
+            <summary>
+            Gets OpenFile command
+            </summary>
+        </member>
+        <member name="P:WpfApp.MainWindow.SaveFile">
+            <summary>
+            Gets SaveFileCommand
+            </summary>
+        </member>
+        <member name="M:WpfApp.MainWindow.OpenFileExecute">
+            <summary>
+            Opens new file
+            </summary>
+        </member>
+        <member name="M:WpfApp.MainWindow.SaveFileExecute">
+            <summary>
+            Saves current ellipses
+            </summary>
+        </member>
+        <member name="M:WpfApp.MainWindow.NewFileExecute">
+            <summary>
+            Clear drawing area
+            </summary>
+        </member>
+        <member name="M:WpfApp.MainWindow.ResetCurrentEllipse">
+            <summary>
+            Resets current drawing area
+            </summary>
+        </member>
+        <member name="M:WpfApp.MainWindow.EllipseCanvas_OnEllipseAdded(System.Object,WpfApp.EllipseListChangedEventArgs)">
+            <summary>
+            Adds new ellipse to drawing area
+            </summary>
+            <param name="sender">Reference to the object that raised the event</param>
+            <param name="args">Provides data for the EllipseListChangedEventArgs event</param>
+        </member>
+        <member name="M:WpfApp.MainWindow.ClearCanvas">
+            <summary>
+            Clears all ellipses
+            </summary>
+        </member>
+        <member name="M:WpfApp.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfApp.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WpfApp.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WpfApp.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
