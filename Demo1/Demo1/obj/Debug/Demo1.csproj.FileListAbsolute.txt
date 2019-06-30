@@ -1,0 +1,25 @@
+C:\Users\dunva\source\repos\Demo1\Demo1\obj\Debug\Demo1.csprojAssemblyReference.cache
+C:\Users\dunva\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.CoreCompileInputs.cache
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\Demo1.exe.config
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\Demo1.exe
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\Demo1.pdb
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\EntityFramework.dll
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\log4net.dll
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\EntityFramework.xml
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dunva\source\repos\Demo1\Demo1\bin\Debug\log4net.xml
+C:\Users\dunva\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.CopyComplete
+C:\Users\dunva\source\repos\Demo1\Demo1\obj\Debug\Demo1.exe
+C:\Users\dunva\source\repos\Demo1\Demo1\obj\Debug\Demo1.pdb
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\obj\Debug\Demo1.csprojAssemblyReference.cache
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\obj\Debug\Demo1.csproj.CoreCompileInputs.cache
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\obj\Debug\Demo1.exe
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\obj\Debug\Demo1.pdb
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\bin\Debug\Demo1.exe.config
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\bin\Debug\Demo1.exe
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\bin\Debug\Demo1.pdb
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\bin\Debug\EntityFramework.xml
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\bin\Debug\log4net.xml
+C:\Users\dunva\OneDrive\Рабочий стол\.NET\Demo1\Demo1\obj\Debug\Demo1.csproj.CopyComplete
