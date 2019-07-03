@@ -1,0 +1,139 @@
+﻿@model Entity.Models.Order
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Order</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.ClientData.Id)
+    @Html.HiddenFor(model => model.ShopData.Id)
+    @Html.HiddenFor(model => model.GoodsData.Id)
+    @Html.HiddenFor(model => model.ShopData.Address.Id)
+    @Html.HiddenFor(model => model.ClientData.Address.Id)
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <fieldset>
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ClientData.FirstName)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ClientData.FirstName)
+                    @Html.ValidationMessageFor(model => model.ClientData.FirstName)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ClientData.LastName)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ClientData.LastName)
+                    @Html.ValidationMessageFor(model => model.ClientData.LastName)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ClientData.Email)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ClientData.Email)
+                    @Html.ValidationMessageFor(model => model.ClientData.Email)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ClientData.PhoneNumber)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ClientData.PhoneNumber)
+                    @Html.ValidationMessageFor(model => model.ClientData.PhoneNumber)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ClientData.Address.City)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ClientData.Address.City)
+                    @Html.ValidationMessageFor(model => model.ClientData.Address.City)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ClientData.Address.Street)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ClientData.Address.Street)
+                    @Html.ValidationMessageFor(model => model.ClientData.Address.Street)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ClientData.Address.BuildingNumber)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ClientData.Address.BuildingNumber)
+                    @Html.ValidationMessageFor(model => model.ClientData.Address.BuildingNumber)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ShopData.Name)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ShopData.Name)
+                    @Html.ValidationMessageFor(model => model.ShopData.Name)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ShopData.Address.City)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ShopData.Address.City)
+                    @Html.ValidationMessageFor(model => model.ShopData.Address.City)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ShopData.Address.Street)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ShopData.Address.Street)
+                    @Html.ValidationMessageFor(model => model.ShopData.Address.Street)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.ShopData.Address.BuildingNumber)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ShopData.Address.BuildingNumber)
+                    @Html.ValidationMessageFor(model => model.ShopData.Address.BuildingNumber)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.GoodsData.Code)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.GoodsData.Code)
+                    @Html.ValidationMessageFor(model => model.GoodsData.Code)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.GoodsData.Weight)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.GoodsData.Weight)
+                    @Html.ValidationMessageFor(model => model.GoodsData.Weight)
+                </div>
+                <hr />
+                <input type="submit" value="Save" class="btn btn-default" />
+            </fieldset>
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

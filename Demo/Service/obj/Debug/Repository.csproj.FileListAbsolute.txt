@@ -1,0 +1,15 @@
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\Service.dll
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\Service.pdb
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\Data.dll
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\Entity.dll
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\EntityFramework.dll
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\Data.pdb
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\Entity.pdb
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\EntityFramework.xml
+C:\Users\dunva\source\repos\Demo\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dunva\source\repos\Demo\Service\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\dunva\source\repos\Demo\Service\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\dunva\source\repos\Demo\Service\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\dunva\source\repos\Demo\Service\obj\Debug\Service.dll
+C:\Users\dunva\source\repos\Demo\Service\obj\Debug\Service.pdb
